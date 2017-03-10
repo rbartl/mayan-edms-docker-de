@@ -10,8 +10,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update && \
 apt-get install -y --no-install-recommends \
-tesseract-ocr-deu
-&& \
+tesseract-ocr-deu && \
 apt-get clean autoclean && \
 apt-get autoremove -y && \
 rm -rf /var/lib/apt/lists/* && \
